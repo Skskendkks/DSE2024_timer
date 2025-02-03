@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        var dates = [
+            "3/24/2024",
+            "4/13/2024",
+            "4/14/2024",
+            "4/16/2024",
+            "4/12/2024",
+            "4/17/2024",
+            "4/27/2024",
+            "4/25/2024",
+            "4/28/2024",
+            "4/21/2024",
+            "4/10/2024",
+            "4/23/2024",
+            "4/19/2024",
+            "4/30/2024",
+            "4/20/2024",
+            "4/11/2024",
+            "4/26/2024",
+            "4/31/2024",
+            "5/4/2024",
+            "5/8/2024",
+            "3/13/2024",
+            "3/13/2024",
+            "4/24/2024",
+            "5/3/2024",
+            "5/5/2024",
+            "5/7/2024",
+            "4/18/2024"
+        ];
+        function countdown() {
+            var now = new Date();
+            for (var i = 0; i < dates.length; i++) {
+                var date = new Date(dates[i]);
+                var diff = date.getTime() - now.getTime();
+                var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                document.getElementById("countdown" + i).innerHTML = days + " days";
+            }
+        }
+        setInterval(countdown, 1);
+    </script>
+</head>
+<body>
+    <h1>HKDSE Countdown&nbsp;&nbsp;</h1>
+    <ul>
+        <li>
+            <h4>F6 last day 中六最後一天 3/12/2024: <span id="countdown21"></span></h4>
+        </li>
+        <li>
+            <h4>English Speaking paper 4 英文說話卷四 3/12/2024: <span id="countdown20"></span></h4>
+        </li>
+        <li>
+            <h4>English Speaking paper 4 ( SEN ) 英文說話卷四（特殊學習需要） 3/23/2024: <span id="countdown0"></span></h4>
+        </li>
+        <li>
+            <h4>Visual Arts 視覺藝術 4/9/2024: <span id="countdown10"></span></h4>
+        </li>
+        <li>
+            <h4>Design & Applied Technology 1 and 2 設計與應用科技1及2 4/10/2024: <span id="countdown15"></span></h4>
+        </li>
+        <li>
+            <h4>Chinese Reading and Writing paper 1 and 2中文閱讀和寫作卷一及卷二 4/11/2024: <span id="countdown4"></span></h4>
+        </li>
+        <li>
+            <h4>English Reading and Writing paper 1 and 2英文閱讀和寫作卷一及卷二 4/12/2024: <span id="countdown1"></span></h4>
+        </li>
+        <li>
+            <h4>English Listening paper 3英文聆聽卷三 4/13/2024: <span id="countdown2"></span></h4>
+        </li>
+        <li>
+            <h4>Mathematics Compulsory paper 1 and paper 2 數學必修部分卷一及卷二4/15/2024: <span id="countdown3"></span></h4>
+        </li>
+        <li>
+            <h4>Citizenship and Social Development 公民與社會發展科 4/16/2024: <span id="countdown5"></span></h4>
+        </li>
+        <li>
+            <h4>Health Management & Social Care paper 1 paper 2 健康管理與社會關懷卷一及卷二 4/17/2024: <span id="countdown26"></span></h4>
+        </li>
+        <li>
+            <h4>Chemistry paper 1 and 2, Combined Sciences (Chemistry) 化學卷一及卷二、組合科學（化學）4/18/2024: <span id="countdown12"></span></h4>
+        </li>
+        <li>
+            <h4>Geography paper 1 and 2 地理卷一及卷二 4/19/2024: <span id="countdown14"></span></h4>
+        </li>
+        <li>
+            <h4>Mathematics Extended part Modules 1 and 2 (Calculus and statistics and Algebra and Calculus ) 數學科延伸部分單元一及單元二 （微積分與統計和代數與微積分）4/20/2024: <span id="countdown9"></span></h4>
+        </li>
+        <li>
+            <h4>Economics paper 1 and 2 經濟卷一及卷二 4/22/2024: <span id="countdown11"></span></h4>
+        </li>
+        <li>
+            <h4>Chinese Literature paper 1 and paper 2, Technology & Living paper 1 and paper 2 中國文學卷一及卷二、科技與生活卷一及卷二 4/23/2024: <span id="countdown22"></span></h4>
+        </li>
+        <li>
+            <h4>Physics paper 1 and paper 2, Integrated Science 1 and,&nbsp; Combined Science (Physics) &nbsp; 物理卷一及卷二、組合科學（物理） 4/24/2024: <span id="countdown7"></span></h4>
+        </li>
+        <li>
+            <h4>Chinese History paper 1 and 2 中國歷史卷一及卷二 4/25/2024: <span id="countdown16"></span></h4>
+        </li>
+        <li>
+            <h4>Biology paper 1 and paper 2, Combined Sciences (Biology) 生物卷一及卷二、組合科學（生物）4/26/2024: <span id="countdown6"></span></h4>
+        </li>
+        <li>
+            <h4>Information &amp; Communication Technology paper 1 and 2資訊及通訊科技卷一及卷二4/27/2024:&nbsp;<span id="countdown8"></span></h4>
+        </li>
+        <li>
+            <h4>Business, Accounting & Financial Studies 1 and 2 (Accounting module and Business management module) 企業、會計及財務概論卷一及卷二 （會計單元及商業管理單元） 4/29/2024: <span id="countdown13"></span></h4>
+        </li>
+        <li>
+            <h4>Physical Education paper 1 and 2, Music 1A and 1B 體育卷一及卷二、音樂1A及1B 4/30/2024: <span id="countdown17"></span></h4>
+        </li>
+        <li>
+            <h4>History paper 1 and 2 歷史卷一及卷二 5/2/2024: <span id="countdown23"></span></h4>
+        </li>
+        <li>
+            <h4>Ethics & Religious Studies paper 1 and 2 倫理與宗教卷一及卷二 5/3/2024: <span id="countdown18"></span></h4>
+        </li>
+        <li>
+            <h4>Tourism & Hospitality Studies paper 1 and 2 旅遊與款待卷一及卷二 5/4/2024: <span id="countdown24"></span></h4>
+        </li>
+        <li>
+            <h4>Reserve 後備 5/6/2024: <span id="countdown25"></span></h4>
+        </li>
+        <li>
+            <h4>Reserve 後備 5/7/2024: <span id="countdown19"></span></h4>
+        </li>
+    </ul>
+</body>
+</html>
